@@ -4,7 +4,7 @@
 FROM public.ecr.aws/aws-otel-test/aws-otel-java-spark:latest
 
 # Set environment variables
-ENV OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317"
+ENV OTEL_EXPORTER_OTLP_ENDPOINT="http://aws-ot-collector:4317"
 ENV OTEL_RESOURCE_ATTRIBUTES="service.namespace=AOCDockerDemo,service.name=AOCDockerDemoService"
 ENV AWS_REGION="us-west-2"
 ENV OTEL_METRICS_EXPORTER="otlp"
